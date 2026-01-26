@@ -39,3 +39,10 @@ VALUES
 -- - `id_cliente`: intero.  
 
 -- Scrivere l'istruzione SQL.
+
+create table ordini(
+	id int primary key auto_increment,
+	data_ordine date,
+    totale decimal(10,2),
+    id_cliente int
+);
