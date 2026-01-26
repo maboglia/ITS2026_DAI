@@ -117,3 +117,11 @@ create table libro(
     pagine int not null default 0,
     id_editore int
 );
+
+-- **8. Rinomina la tabella "clienti":**  
+-- Rinomina la tabella `clienti` con il nuovo nome `customers`.  
+
+-- Scrivere l'istruzione SQL.
+
+-- ---
+ALTER TABLE clienti RENAME TO customers;
