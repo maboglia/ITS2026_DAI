@@ -81,7 +81,7 @@ Scrivere l'istruzione SQL.
 
 ---
 
-**8. Rinomina della tabella "clienti":**  
+**8. Rinomina la tabella "clienti":**  
 Rinomina la tabella `clienti` con il nuovo nome `customers`.  
 
 Scrivere l'istruzione SQL.

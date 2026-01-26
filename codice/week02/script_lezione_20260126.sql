@@ -99,4 +99,21 @@ create table americhe (
 create table europa like americhe;
 create table africa like americhe;
 
+-- **7. Creazione della tabella "libro":**  
+-- Crea una tabella chiamata `libro` con i seguenti campi:  
 
+-- - `id`: intero, chiave primaria.  
+-- - `titolo`: stringa con lunghezza massima di 100 caratteri.  
+-- - `prezzo`: decimale con precisione 6,2.  
+-- - `pagine`: intero.  
+-- - `id_editore`: intero.  
+
+-- Scrivere l'istruzione SQL.
+
+create table libro(
+	id int primary key auto_increment,
+    titolo varchar(100) not null,
+    prezzo decimal(6,2) not null default 0,
+    pagine int not null default 0,
+    id_editore int
+);
