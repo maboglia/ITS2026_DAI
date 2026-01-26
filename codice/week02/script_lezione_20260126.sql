@@ -18,8 +18,24 @@ create table prodotti(
     quantita int unsigned check (quantita <= 100)
 );
 
+alter table prodotti
+add column
+categoria varchar(45) NULL;
+
+SELECT * FROM its2026_dai.prodotti;
+
+INSERT INTO prodotti (nome, prezzo, quantita, categoria) 
+VALUES
+('maglia verde', 10.50, 15, 'abbigliamento'),
+('tavolo verde', 85.75, 10, 'arredamento');
 
 
+-- **3. Creazione della tabella "ordini":**  
+-- Crea una tabella chiamata `ordini` con i seguenti campi:  
 
+-- - `id`: intero, chiave primaria.  
+-- - `data_ordine`: data.  
+-- - `totale`: decimale con precisione 10,2.  
+-- - `id_cliente`: intero.  
 
-
+-- Scrivere l'istruzione SQL.
