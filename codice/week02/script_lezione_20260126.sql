@@ -46,3 +46,57 @@ create table ordini(
     totale decimal(10,2),
     id_cliente int
 );
+
+-- **4. Creazione della tabella "clienti":**  
+-- Crea una tabella chiamata `clienti` con i seguenti campi:  
+
+-- - `id`: intero, chiave primaria.  
+-- - `nome`: stringa con lunghezza massima di 30 caratteri.  
+-- - `cognome`: stringa con lunghezza massima di 30 caratteri.  
+-- - `email`: stringa con lunghezza massima di 100 caratteri.  
+-- - `provincia`: stringa con lunghezza di 2 caratteri.  
+
+-- Scrivere l'istruzione SQL.
+
+create table clienti(
+	id int primary key auto_increment,
+    nome varchar(30) NOT NULL,
+    cognome varchar(30) NOT NULL,
+    email varchar(100) NOT NULL,
+    provincia char(2)
+);
+
+---
+
+-- **5. Modifica della tabella "clienti":**  
+
+-- - Cambia la lunghezza massima del campo `cognome` da 30 a 50 caratteri.  
+-- - Aggiungi un nuovo campo chiamato `telefono` di tipo stringa con lunghezza massima di 20 caratteri, posizionandolo dopo il campo `cognome`.  
+
+-- Scrivere un'unica istruzione SQL.
+ALTER TABLE clienti
+MODIFY COLUMN cognome VARCHAR(50);
+
+ALTER TABLE clienti
+ADD telefono varchar(20) after cognome;
+
+-- **6. Creazione delle tabelle "americhe", "europa" e "africa":**  
+-- Crea tre tabelle chiamate `americhe`, `europa` e `africa`.  
+-- Ogni tabella deve avere i seguenti campi:  
+
+-- - `id`: intero, chiave primaria.  
+-- - `stato`: stringa con lunghezza massima di 50 caratteri.  
+-- - `capitale`: stringa con lunghezza massima di 50 caratteri.  
+
+-- Scrivere le istruzioni SQL per le tre tabelle.
+
+create table americhe (
+	id int primary key auto_increment, 
+    stato varchar(50) not null,
+    capitale varchar(50) not null
+);
+
+create table europa like americhe;
+create table africa like americhe;
+
+
