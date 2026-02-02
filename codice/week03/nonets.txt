@@ -1,0 +1,17 @@
+CREATE TABLE `pokemon_copy` (
+  `Id` int ,
+  `Name` varchar(100),
+  `Type 1` varchar(20),
+  `Type 2` varchar(20),
+  `Total` int DEFAULT NULL,
+  `HP` int DEFAULT NULL,
+  `Attack` int DEFAULT NULL,
+  `Defense` int DEFAULT NULL,
+  `Sp_Atk` int DEFAULT NULL,
+  `Sp_Def` int DEFAULT NULL,
+  `Speed` int DEFAULT NULL,
+  `Generation` smallint DEFAULT NULL,
+  `Legendary` varchar(10)
+);
+
+`Name`, `Type 1`, `Type 2`, `Total`, `HP`, `Attack`, `Defense`, `Sp_Atk`, `Sp_Def`, `Speed`, `Generation`, `Legendary` 
