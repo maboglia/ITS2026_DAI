@@ -37,27 +37,15 @@ select *
 
 from alimenti a  -- LEFT
 
-inner join  categorie_alimenti cat -- RIGHT
+inner join  categorie_alimenti as cat -- RIGHT
 
-on a.categoria_id = cat.categoria_id;
+using(categoria_id);
+-- on a.categoria_id = cat.categoria_id;
 
-drop table alimenti_grassi;
-create or replace view alimenti_grassi
 
-as 
 
-select 
-	a.prodotto,
-    cat.categoria_nome as 'Categoria Alimentare',
-    a.lipidi as grassi
-from alimenti as a
-join categorie_alimenti as cat using(categoria_id)
 
-where a.lipidi > ( select avg(lipidi) from alimenti )
 
-order by grassi desc;
-
-select * from alimenti_grassi where grassi > (select avg(grassi) from alimenti_grassi );
 
 
 
