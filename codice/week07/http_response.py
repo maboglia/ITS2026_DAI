@@ -11,11 +11,13 @@ cursore.execute(query)
 
 rows = cursore.fetchall()
 
-for row in rows:
-    print(row[1])
+# for row in rows:
+#     print(row[1])
 
 app = Flask(__name__)
 
-
+@app.get('/home')
+def homepage():
+    return jsonify(rows)
 
 app.run()
