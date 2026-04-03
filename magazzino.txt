@@ -1,0 +1,58 @@
+
+    SELECT 
+        p.nome, f.ragione_sociale, c.nome
+    FROM prodotti p
+    join fornitori f using(id_fornitore)
+    join categorie c using(id_categoria)
+
+
+
+    SELECT 
+        p.nome, f.ragione_sociale, c.nome
+    FROM prodotti p
+    join fornitori f using(id_fornitore)
+    join categorie c using(id_categoria)
+
+
+Scrivania Legno | WoodDesign | Arredamento
+Sedia Ergonomica | WoodDesign | Arredamento
+Libreria Modulare | WoodDesign | Arredamento
+Risme Carta A4 (5pz) | Cartiera Veneta | Cancelleria
+Set Penne Gel | OfficeSupply Co. | Cancelleria
+Organizer da tavolo | OfficeSupply Co. | Cancelleria
+Laptop Pro | TechSpA | Elettronica
+Mouse Wireless | TechSpA | Elettronica
+Monitor 4K | TechSpA | Elettronica
+Cuffie Noise Cancelling | TechSpA | Elettronica
+Hard Disk Esterno 2TB | Global Logistics | Elettronica
+Smartphone Entry Level | Global Logistics | Elettronica
+Lampada da Scrivania LED | LuceDesign | Illuminazione
+Piantana Alogena | LuceDesign | Illuminazione
+Tastiera Meccanica | TechSpA | Periferiche
+Webcam HD | TechSpA | Periferiche
+Cavo HDMI 2m | Global Logistics | Periferiche
+
+    SELECT 
+        p.nome, f.ragione_sociale, c.nome
+    FROM prodotti p
+    join fornitori f using(id_fornitore)
+    join categorie c using(id_categoria)
+
+
+{'nome': 'Arredamento', 'ragione_sociale': 'WoodDesign'}
+{'nome': 'Arredamento', 'ragione_sociale': 'WoodDesign'}
+{'nome': 'Arredamento', 'ragione_sociale': 'WoodDesign'}
+{'nome': 'Cancelleria', 'ragione_sociale': 'Cartiera Veneta'}
+{'nome': 'Cancelleria', 'ragione_sociale': 'OfficeSupply Co.'}
+{'nome': 'Cancelleria', 'ragione_sociale': 'OfficeSupply Co.'}
+{'nome': 'Elettronica', 'ragione_sociale': 'TechSpA'}
+{'nome': 'Elettronica', 'ragione_sociale': 'TechSpA'}
+{'nome': 'Elettronica', 'ragione_sociale': 'TechSpA'}
+{'nome': 'Elettronica', 'ragione_sociale': 'TechSpA'}
+{'nome': 'Elettronica', 'ragione_sociale': 'Global Logistics'}
+{'nome': 'Elettronica', 'ragione_sociale': 'Global Logistics'}
+{'nome': 'Illuminazione', 'ragione_sociale': 'LuceDesign'}
+{'nome': 'Illuminazione', 'ragione_sociale': 'LuceDesign'}
+{'nome': 'Periferiche', 'ragione_sociale': 'TechSpA'}
+{'nome': 'Periferiche', 'ragione_sociale': 'TechSpA'}
+{'nome': 'Periferiche', 'ragione_sociale': 'Global Logistics'}

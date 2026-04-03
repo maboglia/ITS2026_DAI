@@ -1,0 +1,67 @@
+
+    SELECT 
+        p.nome, f.ragione_sociale, c.nome
+    FROM prodotti p
+    join fornitori f using(id_fornitore)
+    join categorie c using(id_categoria)
+
+
+Scrivania Legno | WoodDesign | Arredamento
+Sedia Ergonomica | WoodDesign | Arredamento
+Libreria Modulare | WoodDesign | Arredamento
+Risme Carta A4 (5pz) | Cartiera Veneta | Cancelleria
+Set Penne Gel | OfficeSupply Co. | Cancelleria
+Organizer da tavolo | OfficeSupply Co. | Cancelleria
+Laptop Pro | TechSpA | Elettronica
+Mouse Wireless | TechSpA | Elettronica
+Monitor 4K | TechSpA | Elettronica
+Cuffie Noise Cancelling | TechSpA | Elettronica
+Hard Disk Esterno 2TB | Global Logistics | Elettronica
+Smartphone Entry Level | Global Logistics | Elettronica
+Lampada da Scrivania LED | LuceDesign | Illuminazione
+Piantana Alogena | LuceDesign | Illuminazione
+Tastiera Meccanica | TechSpA | Periferiche
+Webcam HD | TechSpA | Periferiche
+Cavo HDMI 2m | Global Logistics | Periferiche
+SELECT * FROM view_prodotti_fornitori_categorie
+{'nome_prodotto': 'Scrivania Legno', 'ragione_sociale': 'WoodDesign', 'nome_categoria': 'Arredamento'}
+{'nome_prodotto': 'Sedia Ergonomica', 'ragione_sociale': 'WoodDesign', 'nome_categoria': 'Arredamento'}
+{'nome_prodotto': 'Libreria Modulare', 'ragione_sociale': 'WoodDesign', 'nome_categoria': 'Arredamento'}
+{'nome_prodotto': 'Risme Carta A4 (5pz)', 'ragione_sociale': 'Cartiera Veneta', 'nome_categoria': 'Cancelleria'}
+{'nome_prodotto': 'Set Penne Gel', 'ragione_sociale': 'OfficeSupply Co.', 'nome_categoria': 'Cancelleria'}
+{'nome_prodotto': 'Organizer da tavolo', 'ragione_sociale': 'OfficeSupply Co.', 'nome_categoria': 'Cancelleria'}
+{'nome_prodotto': 'Laptop Pro', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Mouse Wireless', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Monitor 4K', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Cuffie Noise Cancelling', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Hard Disk Esterno 2TB', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Smartphone Entry Level', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Lampada da Scrivania LED', 'ragione_sociale': 'LuceDesign', 'nome_categoria': 'Illuminazione'}
+{'nome_prodotto': 'Piantana Alogena', 'ragione_sociale': 'LuceDesign', 'nome_categoria': 'Illuminazione'}
+{'nome_prodotto': 'Tastiera Meccanica', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Periferiche'}
+{'nome_prodotto': 'Webcam HD', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Periferiche'}
+{'nome_prodotto': 'Cavo HDMI 2m', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Periferiche'}
+
+SELECT * FROM view_prodotti_fornitori_categorie
+{'nome_prodotto': 'Scrivania Legno', 'ragione_sociale': 'WoodDesign', 'nome_categoria': 'Arredamento'}
+{'nome_prodotto': 'Sedia Ergonomica', 'ragione_sociale': 'WoodDesign', 'nome_categoria': 'Arredamento'}
+{'nome_prodotto': 'Libreria Modulare', 'ragione_sociale': 'WoodDesign', 'nome_categoria': 'Arredamento'}
+{'nome_prodotto': 'Risme Carta A4 (5pz)', 'ragione_sociale': 'Cartiera Veneta', 'nome_categoria': 'Cancelleria'}
+{'nome_prodotto': 'Set Penne Gel', 'ragione_sociale': 'OfficeSupply Co.', 'nome_categoria': 'Cancelleria'}
+{'nome_prodotto': 'Organizer da tavolo', 'ragione_sociale': 'OfficeSupply Co.', 'nome_categoria': 'Cancelleria'}
+{'nome_prodotto': 'Laptop Pro', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Mouse Wireless', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Monitor 4K', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Cuffie Noise Cancelling', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Hard Disk Esterno 2TB', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Smartphone Entry Level', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Lampada da Scrivania LED', 'ragione_sociale': 'LuceDesign', 'nome_categoria': 'Illuminazione'}
+{'nome_prodotto': 'Piantana Alogena', 'ragione_sociale': 'LuceDesign', 'nome_categoria': 'Illuminazione'}
+{'nome_prodotto': 'Tastiera Meccanica', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Periferiche'}
+{'nome_prodotto': 'Webcam HD', 'ragione_sociale': 'TechSpA', 'nome_categoria': 'Periferiche'}
+{'nome_prodotto': 'Cavo HDMI 2m', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Periferiche'}
+
+SELECT * FROM view_prodotti_fornitori_categorie order by ragione_sociale limit 3
+{'nome_prodotto': 'Risme Carta A4 (5pz)', 'ragione_sociale': 'Cartiera Veneta', 'nome_categoria': 'Cancelleria'}
+{'nome_prodotto': 'Hard Disk Esterno 2TB', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Elettronica'}
+{'nome_prodotto': 'Smartphone Entry Level', 'ragione_sociale': 'Global Logistics', 'nome_categoria': 'Elettronica'}
